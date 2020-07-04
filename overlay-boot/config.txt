@@ -1,0 +1,7 @@
+disable_overscan=0
+dtoverlay=disable-bt
+dtoverlay=dwc-otg
+dtparam=watchdog=on
+enable_uart=1
+gpu_mem=64
+kernel=zImage

@@ -1,0 +1,8 @@
+config BR2_PACKAGE_MDNS_REPEATER
+	bool "mdns-repeater"
+	depends on BR2_USE_MMU # fork()
+	help
+    mdns-repeater is a Multicast DNS repeater for Linux. This program
+    re-broadcasts mDNS packets from one interface to other interfaces.
+
+    https://github.com/kennylevinsen/mdns-repeater

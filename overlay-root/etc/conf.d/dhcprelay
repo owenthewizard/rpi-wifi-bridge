@@ -1,0 +1,4 @@
+# Comma separated list
+CLIENT_IFACE="eth0"
+
+SERVER_IFACE="wlan0"

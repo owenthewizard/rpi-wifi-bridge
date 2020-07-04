@@ -1,0 +1,19 @@
+auto lo
+iface lo inet loopback
+# IPv6 loopback setup seems to be performed automatically, somehow...
+#iface lo inet6 loopback
+
+auto eth0
+iface eth0 inet manual
+iface eth0 inet6 manual
+  up ip link set eth0 up
+  down ip link set eth0 down
+
+auto wlan0
+iface wlan0 inet dhcp
+# No support for inet6 autoconfig in BB
+iface wlan0 inet6 manual
+  post-up /sbin/ip addr add $(/sbin/ip -o -4 addr show wlan0 scope global | awk '{print $4;}' | cut -d/ -f 1)/32 dev eth0
+  post-up /sbin/ip addr add $(/sbin/ip -o -6 addr show wlan0 scope global | awk '{print $4;}' | cut -d/ -f 1)/128 dev eth0
+  post-up sed -i -e 's/ #.*$//g' /tmp/resolv.conf
+  post-up ip link set wlan0 promisc on

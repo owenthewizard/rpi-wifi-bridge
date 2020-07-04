@@ -1,0 +1,14 @@
+# modules listed in this file will be loaded by S02modules
+# one per line, no whitespace
+
+# RPi Zero W/3/4 Wi-Fi driver
+brcmfmac
+
+# Many chinesium USB ethernet adapters
+#sr9700
+#dm9601
+
+# Waveshare Ethernet/USB Hub HAT
+#rtl8150
+
+#raspberrypi_hwmon
