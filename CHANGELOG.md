@@ -4,6 +4,6 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/)
 
-## beta v1 - 2020-07-04
+## v1 Beta - 2020-07-05
 ### Added
 - Initial beta
