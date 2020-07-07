@@ -9,6 +9,6 @@ brcmfmac
 #dm9601
 
 # Waveshare Ethernet/USB Hub HAT
-#rtl8150
+#r8152
 
 #raspberrypi_hwmon
