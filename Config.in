@@ -1,2 +1,1 @@
-source "$BR2_EXTERNAL_RPI_WIFI_BRIDGE_PATH/package/parprouted/Config.in"
 source "$BR2_EXTERNAL_RPI_WIFI_BRIDGE_PATH/package/mdns-repeater/Config.in"
