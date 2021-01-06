@@ -1,5 +1,7 @@
 dtparam=watchdog=on
 dtparam=audio=off
 enable_uart=1
-gpu_mem=64
+start_file=start.elf
+fixup_file=fixup.dat
+gpu_mem=16
 kernel=zImage
