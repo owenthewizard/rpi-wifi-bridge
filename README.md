@@ -8,7 +8,7 @@ bridge.
 1. Download the latest sdcard.img for your Pi from the
 [releases](https://github.com/owenthewizard/rpi-wifi-bridge/releases) page and
 flash it to a micro SD card.
-2. Mount the F2FS root filesystem from the micro SD card and modify the config
+2. Mount the root filesystem from the micro SD card and modify the config
 files according to [CONFIG.md](CONFIG.md). This can also be done on the Pi
 itself if you have a serial console available:
 ```bash
