@@ -6,9 +6,16 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ## [Unreleased]
 ### Changed
-- Root filesystem is now readonly.
+~~- Root filesystem is now readonly.~~
+
+## v3 Beta - 2021-01-05
+### Added
+- Added COPYING.linux and LICENCE.broadcom to boot partition.
+- `udhcpc` now updates the DNS server with the hostname.
+
+### Changed
 - Use cut-down firmware for faster boot.
-- Auto-generated hostname: RPi-{serial}
+- Hostname is automatically set to RPi-{serial} shortly after boot
 
 ## v2 Beta - 2021-01-05
 ### Added
