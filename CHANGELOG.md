@@ -19,8 +19,8 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ### Changed
 - Update buildroot to 2020.11.x.
-- Replaced `mdsn-repeater` with `avahi-daemon`, which is included in upstream buildroot.
-- Config files renamed: `rpi_wifi_bridge` -> `rpi0w`.
+- Replaced `mdns-repeater` with `avahi-daemon`, which is included in upstream buildroot.
+- Config files renamed: `rpi_wifi_bridge` -> `raspberrypi0w`.
 - Minor edits to network interfaces config.
 - Temporarily reverted rootfs to ext4.
 - Disabled audio by default.
