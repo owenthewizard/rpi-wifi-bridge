@@ -15,7 +15,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ### Changed
 - Use cut-down firmware for faster boot.
-- Hostname is automatically set to RPi-{serial} shortly after boot
+- Hostname is automatically set to RPi-{serial} shortly after boot.
 
 ## v2 Beta - 2021-01-05
 ### Added
