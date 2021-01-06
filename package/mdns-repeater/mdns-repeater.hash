@@ -1,7 +1,0 @@
-# Locally computed:
-sha256  e9595a75a0511236892f69fde66cbf81bc08f9cec5363b1f726ff56299ad9968  mdns-repeater-1.11.tar.gz
-sha512  3f2fc83448db7ed84512ddc42d1769d1d7fa52aa92a4205d9956685fd5fd8b5c050b8a2c44d4b834e242568671fa278ac912f0b35f3c7cf41aa0ae8f1cf2a310  mdns-repeater-1.11.tar.gz
-
-# Hash for license files:
-sha256  ead06c5e9b243275923928f60659a759507ab7ce56abebdefbcf6fcd22dba96c  LICENSE.txt
-sha512  f5ea2bc7a3efafbed53c9d86fde38d0945b29555f9765c64351bae6f95563b86800fda83cd5d2af35b5312132e983a0a6ff998ebc7f717ea4edcc3e85b209a61  LICENSE.txt
