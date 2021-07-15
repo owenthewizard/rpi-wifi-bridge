@@ -8,6 +8,13 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 ### Changed
 ~~- Root filesystem is now readonly.~~
 
+## v4 Beta - 2021-07-15
+### Added
+- Raspberry Pi 2/3 config.
+
+### Changed
+- Updated buildroot to 2021.05.x
+
 ## v3 Beta - 2021-01-05
 ### Added
 - Added COPYING.linux and LICENCE.broadcom to boot partition.
@@ -25,7 +32,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 - A random password is now set at build time (`post-build.sh`).
 
 ### Changed
-- Update buildroot to 2020.11.x.
+- Updated buildroot to 2020.11.x.
 - Replaced `mdns-repeater` with `avahi-daemon`, which is included in upstream buildroot.
 - Config files renamed: `rpi_wifi_bridge` -> `raspberrypi0w`.
 - Minor edits to network interfaces config.
