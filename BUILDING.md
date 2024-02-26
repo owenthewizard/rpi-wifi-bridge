@@ -5,7 +5,7 @@ yourself to customize things like the kernel, included packages, and much, much
 more.
 
 ```bash
-git clone --depth=1 --recurse-submodules --shallow-submodules git://github.com/owenthewizard/rpi-wifi-bridge.git
+git clone --depth=1 --recurse-submodules --shallow-submodules https://github.com/owenthewizard/rpi-wifi-bridge.git
 cd rpi-wifi-bridge/buildroot
 export BR2_EXTERNAL=$PWD/../
 # For RPi 0 W
