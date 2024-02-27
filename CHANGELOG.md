@@ -2,11 +2,30 @@
 
 All notable changes to this project will be documented in this file.
 
-The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
+The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ## [Unreleased]
 ### Changed
 ~~- Root filesystem is now readonly.~~
+
+## v5 Beta - 2024-02-27
+### Added
+- Raspberry Pi 2 config *should* now support 2/3/3+/4.
+-  Add status LED control:
+  - on solid: booting
+  - on heartbeat: booted and associated with SSID
+  - on timer: booted but not associated with SSID (check wifi?)
+- Add fake-hwclock service.
+
+### Changed
+- Updated buildroot to 2023.11.x
+- `S02hostname` now has proper service structure.
+- `S70dhcprelay` -> `S80dhcprelay`
+- Fix sending hostname to DHCP server.
+- Change firmware to cut-down.
+- Disable Bluetooth and use ttyAMA0 for console.
+- Set partition type to 0x83 (Linux ext4).
+- Make root password echo bold and blink after build.
 
 ## v4 Beta - 2021-07-15
 ### Added

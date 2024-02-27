@@ -13,14 +13,23 @@ files according to [CONFIG.md](CONFIG.md). This can also be done on the Pi
 itself if you have a serial console available:
 ```bash
 mount / -o remount,rw
-vi /etc/wpa_supplicant.conf
-vi /etc/hostname
-...
+vi /etc/wpa_supplicant.conf # add your Wi-Fi
+vi /etc/hostname # optional
 mount / -o remount,ro
 reboot
 ```
 3. (Re)boot the Pi and connect your Ethernet client. Observe that it now has
 network connectivity!
+
+## Compatibility
+
+The two prebuilt images are designed to be compatible with the Pi 1/0/0W and 2/3/4/02W.
+That said, to date only the 0W and 3 have been tested and confirmed working.
+
+| Board           | Working  | Version Tested | Notes  | Updated                   |
+| --------------- | -------- | -------------- | ------ | ------------------------- |
+| Raspberry Pi 0w | ✅       | v4 Beta        |        |                           |
+| Raspberry Pi 3  | ✅       | v5 Beta        |        | @owenthewizard 02/27/2024 |
 
 ## Advanced Usage
 
