@@ -6,16 +6,21 @@ more.
 
 ```bash
 git clone --depth=1 --recurse-submodules --shallow-submodules https://github.com/owenthewizard/rpi-wifi-bridge.git
+cd rpi-wifi-bridge
+# generate configs for RPi 0W / RPi 2 targets
+./gen_configs.sh
+# for all targets - untested
+./gen_configs.sh --all
 cd rpi-wifi-bridge/buildroot
 export BR2_EXTERNAL=$PWD/../
-# For RPi 0 W
+# choose your target
 make raspberrypi0w_defconfig
 # make your customizations
 make nconfig
 # build
 make
 # flash to sdcard (replace sdX)
-sudo dd if=output/images/sdcard.img of=/dev/sdX bs=32k oflag=dsync status=progress
+pv -Y output/images/sdcard.img > /dev/sdX
 ```
 
 For more information on how to use Buildroot, see the
