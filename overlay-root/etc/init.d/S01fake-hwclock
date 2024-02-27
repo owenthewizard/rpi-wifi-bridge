@@ -1,0 +1,24 @@
+#!/bin/sh
+
+THISFILE="$0"
+STATEFILE="$0"
+
+case "$1" in
+    start)
+        savedtime=$(stat -c %Y "$STATEFILE")
+        if [ $(date +%s) -lt $savedtime ]; then
+            echo "Restoring saved system time"
+            date -s @$savedtime
+        else
+            echo "Not restoring old system time"
+        fi
+        ;;
+    stop)
+        echo "Saving current time."
+        touch "$STATEFILE"
+        ;;
+    *)
+        echo "Usage: $0 {start|stop}" >&2
+        exit 1
+        ;;
+esac

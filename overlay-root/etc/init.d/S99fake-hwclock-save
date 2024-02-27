@@ -1,0 +1,13 @@
+#!/bin/sh
+
+case "$1" in
+    start)
+        /etc/init.d/S01fake-hwclock stop
+        ;;
+    stop)
+        ;;
+    *)
+        echo "Usage: $0 {start}" >&2
+        exit 1
+        ;;
+esac
