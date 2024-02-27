@@ -4,6 +4,7 @@ enable_uart=1
 uart_2ndstage=1
 gpu_mem=16
 kernel=zImage
+dtparam=act_led_trigger=default-on
 
 [pi0w]
 dtoverlay=disable-bt

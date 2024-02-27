@@ -1,0 +1,19 @@
+#!/bin/sh
+
+case "$1" in
+    start)
+        wpa_status=$(wpa_cli status | fgrep wpa_state | cut -d"=" -f2)
+        if [ "$wpa_status" = "COMPLETED" ]; then
+            echo heartbeat > /sys/class/leds/led0/trigger
+        else
+            echo timer > /sys/class/leds/led0/trigger
+        fi
+        ;;
+    stop)
+        echo default-on > /sys/class/leds/led0/trigger
+        ;;
+    *)
+        echo "Usage: $0 {start|stop}" >&2
+        exit 1
+        ;;
+esac
