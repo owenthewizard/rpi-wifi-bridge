@@ -1,5 +1,15 @@
 dtparam=watchdog=on
 dtparam=audio=off
 enable_uart=1
+uart_2ndstage=1
 gpu_mem=16
 kernel=zImage
+
+[pi0w]
+dtoverlay=disable-bt
+
+[pi3]
+dtoverlay=disable-bt
+
+[pi4]
+dtoverlay=disable-bt
