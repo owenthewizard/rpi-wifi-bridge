@@ -1,5 +1,15 @@
 #!/bin/sh
 
-printf "Setting custom hostname: "
-serial="$(grep -F Serial /proc/cpuinfo | cut -d' ' -f2 | tr -d '0')"
-hostname "RPi-$serial" && echo "OK" || echo "FAIL"
+case "$1" in
+    start)
+        echo "Setting custom hostname: "
+        serial="$(grep -F Serial /proc/cpuinfo | cut -d' ' -f2 | tr -d '0')"
+        hostname "RPi-$serial" && echo "OK" || echo "FAIL"
+        ;;
+    stop)
+        ;;
+    *)
+        echo "Usage: $0 {start}" >&2
+        exit 1
+        ;;
+esac
