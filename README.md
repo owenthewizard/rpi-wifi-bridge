@@ -61,7 +61,7 @@ Changes are documented in the [Changelog](CHANGELOG.md).
 
 ## Authors
 
-See [the list of contributors](https://github.com/owenthewizard/stubby/contributors).
+See [the list of contributors](https://github.com/owenthewizard/rpi-wifi-bridge/contributors).
 
 ## License
 
